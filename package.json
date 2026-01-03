@@ -1,0 +1,24 @@
+{
+  "name": "cybersecurity-portfolio",
+  "version": "1.0.0",
+  "description": "Cybersecurity Portfolio Website - Vimalatithyan S",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server -p 8000 -o",
+    "dev": "http-server -p 8000 -o"
+  },
+  "keywords": [
+    "portfolio",
+    "cybersecurity",
+    "pentesting",
+    "bug-bounty"
+  ],
+  "author": "Vimalatithyan S",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
+
+
+
