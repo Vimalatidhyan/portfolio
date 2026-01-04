@@ -1,4 +1,4 @@
-﻿// ============================================
+﻿
 // MOBILE MENU TOGGLE
 // ============================================
 
@@ -55,7 +55,7 @@ let lastScroll = 0;
 
 window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
-    
+
     if (currentScroll > 100) {
         navbar.style.boxShadow = '0 4px 30px rgba(0, 0, 0, 0.5)';
         navbar.style.background = 'rgba(5, 11, 7, 0.95)';
@@ -63,7 +63,7 @@ window.addEventListener('scroll', () => {
         navbar.style.boxShadow = 'none';
         navbar.style.background = 'rgba(5, 11, 7, 0.85)';
     }
-    
+
     lastScroll = currentScroll;
 });
 
@@ -76,7 +76,7 @@ const navLinks = document.querySelectorAll('.nav-menu a');
 
 window.addEventListener('scroll', () => {
     let current = '';
-    
+
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
@@ -84,7 +84,7 @@ window.addEventListener('scroll', () => {
             current = section.getAttribute('id');
         }
     });
-    
+
     navLinks.forEach(link => {
         const href = link.getAttribute('href');
         if (href === `#${current}`) {
@@ -245,7 +245,7 @@ window.addEventListener('load', () => {
             targetLink.style.textShadow = '0 0 8px rgba(0, 255, 136, 0.15)';
         }
     }
-    
+
     // Add loaded class for any additional animations
     document.body.classList.add('loaded');
 });
@@ -298,9 +298,9 @@ window.addEventListener('focus', () => {
 const devtoolsDetector = () => {
     const widthThreshold = window.outerWidth - window.innerWidth > 160;
     const heightThreshold = window.outerHeight - window.innerHeight > 160;
-    
+
     if ((widthThreshold || heightThreshold) && privacyScreen) {
-         // Optional: trigger protection if needed
+        // Optional: trigger protection if needed
     }
 };
 
